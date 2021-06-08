@@ -1,3 +1,4 @@
+# 랜덤 패키지 이용한 숫자 야구 게임
 from random import randint
 
 
