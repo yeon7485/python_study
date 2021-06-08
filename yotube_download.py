@@ -1,3 +1,4 @@
+# 유튜브 주소를 넣어서 영상 다운로드
 import youtube_dl
 
 with youtube_dl.YoutubeDL() as ydl:
