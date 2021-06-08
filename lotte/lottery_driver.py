@@ -1,3 +1,5 @@
+# 로또 번호 페이지 띄우기
+
 import lottery
 
 HEAD_HTML = '''
