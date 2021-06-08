@@ -1,3 +1,5 @@
+# csv 데이터 파일 이용하여 pandas, matplotlib로 그래프 나타내기
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
