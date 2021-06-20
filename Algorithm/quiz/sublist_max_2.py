@@ -26,7 +26,7 @@ def max_crossing_sum(profits, start, end):
     return left_max + right_max
 
 
-def sublist_max(profits, start, end):
+def sublist_max_2(profits, start, end):
     # 범위에 하나의 항목밖에 없으면, 그 항목을 리턴한다
     if start == end:
         return profits[start]
@@ -35,8 +35,8 @@ def sublist_max(profits, start, end):
     mid = (start + end) // 2
 
     # 상황별로 최대 수익을 구한다
-    max_left = sublist_max(profits, start, mid)
-    max_right = sublist_max(profits, mid + 1, end)
+    max_left = sublist_max_2(profits, start, mid)
+    max_right = sublist_max_2(profits, mid + 1, end)
     max_cross = max_crossing_sum(profits, start, end)
 
     # 위 세 경우 중 가장 큰 결괏값을 리턴한다
@@ -45,13 +45,13 @@ def sublist_max(profits, start, end):
 
 # 테스트
 list1 = [-2, -3, 4, -1, -2, 1, 5, -3]
-print(sublist_max(list1, 0, len(list1) - 1))
+print(sublist_max_2(list1, 0, len(list1) - 1))
 
 list2 = [4, 7, -6, 9, 2, 6, -5, 7, 3, 1, -1, -7, 2]
-print(sublist_max(list2, 0, len(list2) - 1))
+print(sublist_max_2(list2, 0, len(list2) - 1))
 
 list3 = [9, -8, 0, -7, 8, -6, -3, -8, 9, 2, 8, 3, -5, 1, -7, -1, 10, -1, -9, -5]
-print(sublist_max(list3, 0, len(list3) - 1))
+print(sublist_max_2(list3, 0, len(list3) - 1))
 
 list4 = [-9, -8, -8, 6, -4, 6, -2, -3, -10, -8, -9, -9, 6, 2, 8, -1, -1]
-print(sublist_max(list4, 0, len(list4) - 1))
+print(sublist_max_2(list4, 0, len(list4) - 1))

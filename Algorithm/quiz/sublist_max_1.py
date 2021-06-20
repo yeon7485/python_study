@@ -1,6 +1,6 @@
 # 리스트에서 수익이 가장 큰 구간 찾기
 
-def sublist_max(profits):
+def sublist_max_1(profits):
     max_profit = profits[0]  # 최대 수익
 
     for i in range(len(profits)):
@@ -13,6 +13,6 @@ def sublist_max(profits):
 
 
 # 테스트
-print(sublist_max([4, 3, 8, -2, -5, -3, -5, -3]))
-print(sublist_max([2, 3, 1, -1, -2, 5, -1, -1]))
-print(sublist_max([7, -3, 14, -8, -5, 6, 8, -5, -4, 10, -1, 8]))
+print(sublist_max_1([4, 3, 8, -2, -5, -3, -5, -3]))
+print(sublist_max_1([2, 3, 1, -1, -2, 5, -1, -1]))
+print(sublist_max_1([7, -3, 14, -8, -5, 6, 8, -5, -4, 10, -1, 8]))
