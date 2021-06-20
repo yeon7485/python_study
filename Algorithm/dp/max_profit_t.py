@@ -2,7 +2,7 @@
 # count를 팔아서 가능한 최대 수익을 리턴시켜 주는 함수
 # tabulation 방법으로 풀기
 
-def max_profit(price_list, count):
+def max_profit_tabul(price_list, count):
     # 개수별로 가능한 최대 수익을 저장하는 리스트
     # 새꼼달꼼 0개면 0원
     profit_table = [0]
@@ -27,6 +27,6 @@ def max_profit(price_list, count):
 
 
 # 테스트
-print(max_profit([0, 200, 600, 900, 1200, 2000], 5))
-print(max_profit([0, 300, 600, 700, 1100, 1400], 8))
-print(max_profit([0, 100, 200, 400, 600, 900, 1200, 1300, 1500, 1800], 9))
+print(max_profit_tabul([0, 200, 600, 900, 1200, 2000], 5))
+print(max_profit_tabul([0, 300, 600, 700, 1100, 1400], 8))
+print(max_profit_tabul([0, 100, 200, 400, 600, 900, 1200, 1300, 1500, 1800], 9))
