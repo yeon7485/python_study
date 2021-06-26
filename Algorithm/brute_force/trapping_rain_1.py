@@ -1,7 +1,7 @@
 # 담긴 빗물 구하기
 
 # 건물과 건물 사이에 얼만큼의 빗물이 담길 수 있는지 계산
-def trapping_rain(buildings):
+def trapping_rain_1(buildings):
     # 총 담기는 빗물의 양을 변수에 저장
     total_height = 0
 
@@ -23,5 +23,5 @@ def trapping_rain(buildings):
 
 
 # 테스트
-print(trapping_rain([0, 3, 0, 0, 2, 0, 4]))
-print(trapping_rain([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))
+print(trapping_rain_1([0, 3, 0, 0, 2, 0, 4]))
+print(trapping_rain_1([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))
